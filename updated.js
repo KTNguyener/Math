@@ -9,3 +9,5 @@ var cole = {
 
 window.alert(cole.fName = newName);
 window.alert(cole.fName)
+
+//August 28, replacing values in a object literal
