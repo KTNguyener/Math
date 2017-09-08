@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <script>
+    function showName() {
+	  var userName = document.getElementById('userName').value;
+    document.getElementById('one').innerHTML="Hello " + userName;
+    }
+    </script>
+      <input type="text" id="userName"></input>
+      <!--asks for username and gets input-->
+      <button onclick="showName()">
+      Show my name
+      </button>
+      <!--function that will activate on button click-->
+       <p id="one"></p>
+      <!--paragraph format that will show up later-->
+
+  </body>
+</html>
