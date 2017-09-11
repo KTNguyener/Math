@@ -1,0 +1,21 @@
+html stuff
+
+<p>
+Click the button to create a P element with some text
+</p>
+<button onclick="myFunction()">
+Try it
+</button>
+
+js stuff
+
+function myFunction() {
+	var para = document.createElement("P");
+  //created a variable that would make a paragraph
+	var t = document.createTextNode("This is a paragraph.");
+  //created a variable with text that would be added
+  para.appendChild(t);
+  //adds text to the paragraph variable
+  document.body.appendChild(para);
+  //adds paragraph into the body
+}
