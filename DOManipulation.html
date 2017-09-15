@@ -4,12 +4,17 @@
   </head>
   
   <body>
+    <p>Input your shopping list</p>
+    <input type="text" id='list'>
+    
     <script>
       function addAnother(){
         //create a new element and store it in a variable.
         var newListItem = document.createElement('li');
+        //create a variable that finds its value from a user input
+        var x = document.getElementById('list').value
         //create a new text node and store it in a variable
-        var newText = document.createTextNode('Turkey');
+        var newText = document.createTextNode(x);
         //Attach the new text node to the new element. Notice there are no quotes
         newListItem.appendChild(newText);
         //Find the new position where the new element should be added. Tells the item where to go
@@ -17,16 +22,13 @@
         //Insert the new element into its position
         position.appendChild(newListItem);
       }
-      //In a nutshell, line 10 creates a new display case on wall li. Line 12 creates a new item to be put in the display case. Line 14 puts item in display case. Line 16 marks where the display case with the item will go. Line 18 puts the display case on wall li.
+      //In a nutshell, line 13 creates a new display case on wall li. Line 15 finds the user's input and saves it. Line 17 finds the saved user input and puts it in the display case. Line 19 puts item in display case. Line 121 marks where the display case with the item will go. Line 18 puts the display case on wall li.
     </script>
     
     <button onclick="addAnother()">
       Click Here
     </button>
     <ul>
-      <li>Chicken</li>
-      <li>Duck</li>
-      <li>Goose</li>
     </ul>
     
   </body>
