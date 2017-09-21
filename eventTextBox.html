@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      #spy {
+        display:"block"
+      }
+      
+    </style>
+    <script>
+      function goAway(){
+        document.getElementById('message').innerHTML= "He is a puzzle, wrapped in an enigma, shrouded in riddles, lovingly sprinkled with intrigue, express mailed to Mystery, Alaska, and LOOK OUT BEHIND YOU! but it is too late. You're dead. For he is the Spy - globetrotting rogue, lady killer (metaphorically) and mankiller (for real)."
+      }
+      
+      function comeBack(){
+        document.getElementById('message').innerHTML = "Rollover picture for description"
+      }
+      
+    </script>
+    
+  </head>
+  
+  <body>
+    <img src="http://www.misucell.com/data/out/12/IMG_559459.png" id="spy" width= 50% onmouseover="goAway()" onmouseout="comeBack()">
+    <p id="message">Rollover picture for description</p>
+    
+  </body>
+
+</html>

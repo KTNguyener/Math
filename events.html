@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      #spy {
+        display:"block"
+      }
+      
+    </style>
+    <script>
+      function goAway(){
+        document.getElementById('spy').style.visibility= "hidden"
+        document.getElementById('message').innerHTML= "Now you don't"
+      }
+      
+      function comeBack(){
+        document.getElementById('spy').style.visibility= "visible"
+        document.getElementById('message').innerHTML = "Now you see me"
+      }
+      
+    </script>
+    
+  </head>
+  
+  <body>
+    <img src="http://www.misucell.com/data/out/12/IMG_559459.png" id="spy" width= 50% onmouseover="goAway()" onmouseout="comeBack()">
+    <p id="message">Now you see me</p>
+    
+  </body>
+
+</html>
